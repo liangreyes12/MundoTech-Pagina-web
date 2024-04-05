@@ -1,0 +1,71 @@
+main {
+    width: 100%;
+    max-width: 940px; /* Ancho máximo del contenido */
+    margin: 0 auto;
+    padding: 0 20px; /* Agregar espacio en los bordes laterales para evitar que el contenido toque los bordes de la pantalla */
+}
+
+form {
+    margin: 40px 0;
+    padding: 20px; /* Agregar espaciado interno al formulario */
+    background-color: #f8f8f8; /* Agregar un color de fondo para resaltar el formulario */
+    border-radius: 10px; /* Agregar bordes redondeados al formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra al formulario */
+}
+
+form label, form legend{
+    font-family: "Tajawal";
+    display: block;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.input-padron{
+    border-radius: 12px;
+    font-style: italic;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+fieldset select{
+    margin-bottom: 8px;
+}
+
+.enviar{
+    width: 60%;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    box-shadow: 1px 7px 8px rgb(34, 33, 33);
+    border: none;
+    border-radius: 7px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: "Open Sans";
+}
+
+.enviar:hover{
+    background: rgb(24, 150, 150);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+/* Ajustes para elementos pequeños */
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 0 10px; /* Reducir el espacio en los bordes laterales en pantallas pequeñas */
+    }
+    
+    form {
+        padding: 10px; /* Reducir el espaciado interno en pantallas pequeñas */
+    }
+}

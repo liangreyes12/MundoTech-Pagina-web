@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales del header */
+header {
+    color: aliceblue;
+    background-color: black;
+    font-family: "Bebas Neue";
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
+    padding: 10px;
+    border-bottom: 1px solid rgb(0, 255, 221);
+}
+
+header h1 {
+    margin-left: 8%; /* Esto empujará la imagen hacia la izquierda */
+}
+
+.Logo {
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+   
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 22px;
+    padding-right: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #01ffdd;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.titulo {
+    padding-top: 25px;
+    margin: 30px;
+    font-size: 30px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center; /* Centra el título */
+}
+
+.texto {
+    padding-bottom: 20px;
+    font-size: 21px;
+    font-family: "Tajawal";
+    color: rgb(0, 0, 0);
+    line-height: 1.9;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    max-width: 800px; /* Limita el ancho máximo del texto */
+}
+
+ul {
+    margin: 10px auto;
+    max-width: 800px; /* Ajusta el ancho máximo del texto */
+}
+
+.principios {
+    font-family: "Open Sans";
+    font-size: 18px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-weight: 600;
+}
+
+.seguridad{
+    margin: 20px auto;
+    
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 40%; /* Ajusta la imagen al ancho máximo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 40px;
+    transition: 400ms;
+    box-shadow: 8px 10px 17px #000000
+}
+
+.Logo:hover{
+    opacity: 0.3;
+}
+
+footer {
+    margin-top: 7rem;
+    padding: 16px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-weight: 500;
+    font-family: "Nanum Gothic Coding", monospace;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+
+    nav li {
+        margin: 10px 0; /* Espacio entre los elementos */
+    }
+
+    .titulo,
+    .texto,
+    .principios {
+        text-align: center; /* Centra los textos en pantallas pequeñas */
+    }
+}

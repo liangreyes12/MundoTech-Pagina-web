@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../CSS/reset.css" type="text/css">
+        <link rel="stylesheet" href="../CSS/Style.css" type="text/css">
+        <link rel="stylesheet" href="../CSS/Contacto.css" type="text/css"> 
+        <link rel="icon" href="../IMG/Icono.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic+Coding&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic+Coding&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><a href="../HTML/Index.html"><img src="../IMG/Logo.png" alt="Logo de la pagina web Vicious Code" class="Logo"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../HTML/Index.html">Inicio</a></li>
+                    <li><a href="../HTML/Preguntas.html">Preguntas frecuentes</a></li>
+                    <li><a href="../HTML/Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <form>
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" name="nombre" placeholder="Ingrese nombre y apellido" id="nombre" class="input-padron" autofocus required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="email" placeholder="Ingrese correo electronico" id="correo" class="input-padron" required>
+
+                    <label for="telefono">Teléfono</label> 
+                    <input type="tel" name="numero" placeholder="Ingrese número telefonico" id="telefono" class="input-padron" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contactaramos?</legend>
+                        <label for="radio-email">
+                            <input type="radio" name="contacto" value="Email" id="radio-email">
+                            Email
+                        </label>
+                        
+                        <label for="radio-Telefono">
+                            <input type="radio" name="contacto" value="Teléfono" id="radio-Telefono">
+                            Teléfono
+                        </label>
+                        
+                        <label for="radio-WhatsApp">
+                            <input type="radio" name="contacto" value="WhatsApp" id="radio-WhatsApp" checked>
+                            WhatsApp
+                        </label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>¿En cual horario prefiere ser atendido?</legend>
+                        <select name="" id="">
+                            <option value="">Mañana</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noche</option>
+                        </select>
+                    </fieldset>
+                    
+                    <label for=""><input type="checkbox" name="" id="" checked>¿Le gustaría recibir notificaciones sobre las novedades sobre el mundo tech?</label>
+
+                    <input type="submit" value="Enviar Formulario" class="enviar">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy;Derechos Reservados LiangReyes/2024</p>
+        </footer>
+    </body>
+</html>
