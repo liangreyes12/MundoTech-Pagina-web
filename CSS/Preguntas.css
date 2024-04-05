@@ -5,9 +5,9 @@
 }
 
 .contenedor-acordeon {
-    width: 90%; /* Ajustar el ancho del acordeón */
-    max-width: 800px; /* Establecer un máximo razonable */
-    margin: auto; /* Centrar horizontalmente */
+    width: 90%; 
+    max-width: 800px; 
+    margin: auto; 
     margin-top: 80px;
 }
 
@@ -23,7 +23,7 @@
     font-family: "Tajawal";
     font-size: 19px;
     line-height: 1.9;
-    margin-bottom: 20px; /* Espacio entre acordeones */
+    margin-bottom: 20px; 
 }
 
 .acordeon label {

@@ -1,16 +1,16 @@
 main {
     width: 100%;
-    max-width: 940px; /* Ancho máximo del contenido */
+    max-width: 940px; 
     margin: 0 auto;
-    padding: 0 20px; /* Agregar espacio en los bordes laterales para evitar que el contenido toque los bordes de la pantalla */
+    padding: 0 20px; 
 }
 
 form {
     margin: 40px 0;
-    padding: 20px; /* Agregar espaciado interno al formulario */
-    background-color: #f8f8f8; /* Agregar un color de fondo para resaltar el formulario */
-    border-radius: 10px; /* Agregar bordes redondeados al formulario */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra al formulario */
+    padding: 20px; 
+    background-color: #f8f8f8; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 form label, form legend{
@@ -59,13 +59,13 @@ fieldset select{
     transform: scale(1.1);
 }
 
-/* Ajustes para elementos pequeños */
+
 @media only screen and (max-width: 600px) {
     main {
-        padding: 0 10px; /* Reducir el espacio en los bordes laterales en pantallas pequeñas */
+        padding: 0 10px; 
     }
     
     form {
-        padding: 10px; /* Reducir el espaciado interno en pantallas pequeñas */
+        padding: 10px; 
     }
 }
